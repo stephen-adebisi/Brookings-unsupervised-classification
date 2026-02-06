@@ -1,30 +1,36 @@
 # Unsupervised Classification of Brookings, South Dakota
 
 ## Overview
-This project applies unsupervised classification techniques to remotely sensed imagery covering Brookings, South Dakota. The objective is to explore land cover patterns without using labeled training data and to evaluate the spatial structure of the resulting spectral classes.
+This project applies unsupervised classification techniques to Sentinel-2 multispectral imagery covering Brookings, South Dakota. The objective is to explore land cover patterns without labeled training data and to evaluate the spatial structure of resulting spectral clusters.
 
 ## Study Area
 Brookings, South Dakota, USA.
 
 ## Data
-Satellite imagery covering the Brookings area was used for this analysis. The data were preprocessed to prepare spectral bands for clustering.
+The analysis uses Sentinel-2 multispectral satellite imagery acquired from the Copernicus Programme. Sentinel-2 provides high-resolution optical data with multiple spectral bands suitable for land cover analysis. Relevant spectral bands were selected and preprocessed prior to classification.
 
 ## Methods
 Unsupervised classification was implemented in Python using a Jupyter Notebook. The workflow includes:
-- Loading and preprocessing satellite imagery
-- Applying unsupervised clustering algorithms
-- Visualizing classification outputs
-- Interpreting resulting land cover patterns
+- Loading and preprocessing Sentinel-2 spectral bands
+- Normalizing pixel values
+- Applying unsupervised clustering (e.g., K-means)
+- Visualizing and interpreting classified outputs
 
 ## Tools and Libraries
 - Python
 - Jupyter Notebook
 - NumPy
 - scikit-learn
-- rasterio (if applicable)
+- rasterio
 - matplotlib
 
 ## Results
-The unsupervised classification identifies distinct spectral clusters that correspond to major land cover types in the Brookings area.
+The unsupervised classification identifies distinct spectral clusters corresponding to major land cover types in the Brookings area, demonstrating the utility of Sentinel-2 imagery for exploratory land cover mapping.
 
 ## Repository Structure
+├── Brookins Unsupervised Classification.ipynb
+└── README.md
+
+## Author
+Stephen Adebisi  
+Graduate Student, Geography (GIS & Remote Sensing)
